@@ -2,7 +2,7 @@
 
 -The test has been made with go version go1.10.4 linux/amd64.
 
--The project must be copied in `$GOPATH/tpaulmyer/algolia` in order to work.
+-The project must be copied in `$GOPATH/src/tpaulmyer/algolia` in order to work.
 
 -To build the project, you can do a `make` and launch ./bin/api.
 
