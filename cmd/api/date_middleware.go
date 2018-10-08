@@ -35,6 +35,7 @@ func (h *Handler) DateMiddleware(next http.Handler) http.Handler {
 		}
 
 		r = SetDateInContext(DateInfo{Time: t, Layout: layout}, r)
+		w.Header().Set("Content-Type", "application/json")
 		next.ServeHTTP(w, r)
 	})
 }
